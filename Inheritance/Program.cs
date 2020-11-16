@@ -7,6 +7,7 @@ namespace Inheritance
         static void Main(string[] args)
         {
             var tweety = new Bird() { CanFly = true, HasWings = true, LaysEggs = true, Legs = 2, LivesOnLand = false, Weight = 2 };
+            
             var lizard = new Reptile()
             {
                 LivesOnLand = true,
@@ -25,7 +26,7 @@ namespace Inheritance
              var myAnimal = new Animal[]{tweety, lizard};
              foreach( var animal in myAnimal)
             {
-                Console.Write($"Can Fly:{animal.CanFly}");
+                Console.Write($" Can Fly:{animal.CanFly}");
                 Console.Write($" Lives on land:{animal.LivesOnLand}");
                 Console.Write($" Weighs {animal.Weight} lbs");
                 Console.Write($"\n");
